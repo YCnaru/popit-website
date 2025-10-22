@@ -26,4 +26,4 @@ Este proyecto hace parte de mi prueba práctica de desarrollo web, donde aplico 
 
 1. Descarga o clona el repositorio:
    ```bash
-   git clone https://github.com/tuusuario/popit-website.git
+   git clone https://github.com/YCnaru/popit-website.git
