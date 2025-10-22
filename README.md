@@ -1,6 +1,7 @@
 # POP IT - Sitio web del juguete antiestrés
 
 Este proyecto hace parte de mi prueba práctica de desarrollo web, donde aplico mis conocimientos en HTML, CSS y JavaScript para crear un sitio visualmente agradable y funcional.
+
 ---
 
 ## Objetivos del proyecto
@@ -14,10 +15,10 @@ Este proyecto hace parte de mi prueba práctica de desarrollo web, donde aplico 
 
 ## Estructura del proyecto
 
-├── index.html # Página principal
-├── style.css # Estilos con BEM + Flexbox
-├── script.js # Menú hamburguesa responsive
-└── img/ # Carpeta de imágenes
+- index.html # Página principal
+- style.css # Estilos con BEM + Flexbox
+- script.js # Menú hamburguesa responsive
+- img/ # Carpeta de imágenes
 
 ---
 
