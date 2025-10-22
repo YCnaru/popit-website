@@ -1,0 +1,312 @@
+/* =========================================================
+   RESET GENERAL
+   Limpieza básica para que todo se vea igual en todos los navegadores
+========================================================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #fff;
+  color: #222;
+}
+
+/* =========================================================
+   ENCABEZADO (HEADER)
+   Barra superior con el logo, el menú y el botón hamburguesa
+========================================================= */
+.header {
+  background-color: #FFBF69;
+  padding: 20px 10%;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+
+.header__container {
+  display: flex;
+  justify-content: space-between; /
+  align-items: center;
+}
+
+
+.header__logo {
+  font-size: 2rem;
+  color: white;
+  font-weight: bold;
+}
+
+/* =========================================================
+    MENÚ DE NAVEGACIÓN
+========================================================= */
+.nav__list {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+.nav__link {
+  color: white;
+  font-weight: 500;
+}
+
+.nav__link:hover {
+  text-decoration: underline;
+}
+
+/* Botón hamburguesa (solo se muestra en pantallas pequeñas) */
+.header__toggle {
+  background: none;
+  border: none;
+  font-size: 2rem;
+  color: white;
+  cursor: pointer;
+  display: none;
+}
+
+/* =========================================================
+   HERO (PORTADA PRINCIPAL)
+   Sección principal con el título, texto e imagen del pop-it
+========================================================= */
+.hero {
+  background: #FFBF69 url('/img/background.png') no-repeat center center;
+  background-size: contain;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 100px 10%;
+  flex-wrap: wrap;
+  color: white;
+}
+
+.hero__title {
+  font-size: 64px;
+  margin-bottom: 20px;
+}
+
+.hero__highlight {
+  color: #ff4e5c;
+}
+
+.hero__text {
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+.hero__btn {
+  background-color: #DFF9FB;
+  border: none;
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 4px;
+}
+.hero__img {
+  max-width: 300px;
+}
+
+/* =========================================================
+   DESCRIPCIÓN
+   Explicación breve de qué es el Pop It
+========================================================= */
+.descripcion {
+  width: 70%;           
+  margin: 0 auto;          
+  padding: 4rem 0;         
+  text-align: center;    
+  display: flex;           
+  flex-direction: column;
+  align-items: center;     
+  justify-content: center; 
+}
+
+.descripcion__titulo {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+/* =========================================================
+   MODELOS DISPONIBLES
+   Galería con los diferentes tipos de Pop It
+========================================================= */
+.modelos {
+  background-color: #d4f4f1;
+  padding: 3rem 2rem;
+  text-align: center;
+}
+.modelos__titulo{
+  padding-bottom: 2rem;
+}
+.modelos__lista {
+  display: flex;
+  justify-content: center;
+  gap: 4rem;
+  flex-wrap: wrap;
+}
+
+.producto {
+  width: 200px;
+}
+
+.producto__img {
+  width: 100%;
+  border-radius: 10px;
+  padding: 1rem;
+}
+
+.producto__btn {
+  display: inline-block;
+  margin-top: 0.5rem;
+  background-color: orange;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  margin-top: 1rem;
+}
+
+/* =========================================================
+   REGLAS DEL JUEGO
+   Explicación de cómo se juega con el Pop It
+========================================================= */
+.reglas {
+
+  background: #ffffff url('/img/bg-grid.png') no-repeat center center;
+  background-size: 80%;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 3rem 2rem;
+  align-items: center;
+}
+
+.reglas__texto {
+  max-width: 50%;
+}
+.reglas__texto p{
+  margin: 1rem;
+
+}
+
+
+.reglas__img {
+  max-width: 40%;
+  border-radius: 10px;
+}
+
+/* =========================================================
+   FOOTER
+   Pie de página con enlaces e info básica
+========================================================= */
+.footer {
+  background-color: #222;
+  color: white;
+  padding: 2rem 10%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; 
+  flex-wrap: wrap;
+}
+
+
+.footer__logo {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.footer__links {
+  display: flex;
+  flex-direction: row;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+.footer__links a {
+  color: #ccc;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer__links a:hover {
+  color: #FFBF69;
+}
+
+
+.footer__copy {
+  font-size: 0.9rem;
+  color: #aaa;
+  text-align: right;
+}
+
+/* =========================================================
+   RESPONSIVE DESIGN
+   Ajustes para pantallas pequeñas (celulares y tablets)
+========================================================= */
+@media (max-width: 768px) {
+
+  .header__toggle {
+    display: block;
+  }
+
+  .nav {
+    display: none;
+    position: absolute;
+    top: 70px;
+    right: 10%;
+    background-color: white;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+
+  .nav__list {
+    flex-direction: column;
+    gap: 15px;
+    text-align: right;
+    text-align: center;
+  }
+
+  .nav__link {
+    color: #FFBF69;
+    font-weight: bold;
+  }
+
+  .nav.active {
+    display: block;
+  }
+
+  .hero {
+    flex-direction: column;
+    text-align: center;
+    background-image: none;
+    background-color: #FFBF69;
+    padding: 80px 2rem;
+  }
+
+  .hero__img {
+    margin-top: 20px;
+  }
+
+  .reglas {
+    flex-direction: column;
+  }
+
+  .reglas__texto,
+  .reglas__img {
+    max-width: 100%;
+  }
+  .footer__links{
+    flex-direction: column;
+  }
+}
